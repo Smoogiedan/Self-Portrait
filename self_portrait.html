@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Text</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            width: 600px; /* Increased image size */
+            height: 600px; /* Increased image size */
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px; /* Optional: rounded corners */
+        }
+
+        .text {
+    position: absolute;
+    top: 454px;
+    left: 296px;
+    transform: translate(-50%, -50%);
+    font-size: 36px; /* Larger text size */
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 15px; /* Larger padding */
+    border-radius: 5px; /* Optional: rounded corners for the text box */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img class="image" src="images/self_portrait.jpg" alt="A man">
+        <div class="text">Daniel</div>
+    </div>
+
+</body>
+</html>
